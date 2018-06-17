@@ -1,0 +1,26 @@
+{
+    "short_name" : "pwa-demo",
+    "name" : "This web site is for pwa demo",
+    "icons" : [
+        {
+            "src" : "./images/home.png",
+            "type" : "image/png",
+            "size" : "128x128"
+        },
+        {
+            "src" : "./images/leaf.png",
+            "type" : "image/png",
+            "size" : "152x152"
+        },
+        {
+            "src" : "./images/avengers.jpg",
+            "type" : "image/jpg",
+            "size" : "192x192"
+        }
+    ],
+    "display" : "standalone", 
+    "start_url" : "./",
+    "background_color": "#2196F3",
+    "theme_color": "#FF0000",
+    "orientation": "portrait"
+}

@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase Hosting</title>
+</head>
+<body>
+  <header>
+    <h3>Firebase Auth Sample</h3>
+  </header>
+  <form>
+    <div>
+      <label for="email">Email : </label>
+      <input type="email" name="email">
+    </div>
+    <div>
+      <label for="password">Password : </label>
+      <input type="password" name="password">
+    </div>
+    <button type="button" id="authLoginBtn">Login</button>
+    <button type="button" id="authGoogleLoginBtn">Login with Google</button>
+    <button type="button" id="signUpBtn">Sign up</button>
+    <button type="button" id="signOutBtn">Sign Out</button>
+  </form>
+  <section>
+    <p>Login Please</p>
+  </section>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCYJEWOBrlusjf8jTpJ8E-ZMisTduVp_T4",
+    authDomain: "my-awesome-project-ccc3c.firebaseapp.com",
+    databaseURL: "https://my-awesome-project-ccc3c.firebaseio.com",
+    projectId: "my-awesome-project-ccc3c",
+    storageBucket: "",
+    messagingSenderId: "81934137864"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Vue Sample</title>
+  </head>
+  <body>
+    <div id="app">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue.js!'
+        },
+        //template: '<p>{{message}}</p>'
+        render: function(createElement){
+          //return createElement(태그명, 하위 태크(선택적), 태그속성 + 태그내용);
+          return createElement('p',this.message);
+        }
+      })
+    </script>
+  </body>
+</html>
